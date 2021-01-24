@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monda", sans-serif;
+}
+
+/*mobile view*/
+
+.web_design_page {
+  background-color: black;
+  height: 100vh;
+  color: white;
+}
+
+.tomaincopy {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-family: "Six Caps", sans-serif;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  color: wi;
+}
+
+h3 {
+  margin-left: 20px;
+  padding-top: 20px;
+  font-size: 35px;
+}
+
+.webdesign-ul {
+  font-size: 18px;
+  position: fixed;
+  list-style: none;
+  top: 74%;
+  right: 30px;
+  text-align: right;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.names-mobile {
+  position: absolute;
+  left: 8%;
+  top: 34%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.names-mobile div {
+  position: absolute;
+  width: 260px;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.names-mobile p:nth-child(1) {
+  padding-bottom: 20px;
+}
+
+.names-mobile div:nth-of-type(1) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(2) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 6s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(3) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 11s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(4) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 16s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(5) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 21s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(6) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 26s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(7) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 31s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(8) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 36s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(9) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 41s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(10) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 46s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(11) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 51s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(12) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 56s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(13) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 61s;
+  opacity: 0;
+}
+.names-mobile div:nth-of-type(14) {
+  animation: delay-animation 70s linear infinite;
+  animation-delay: 66s;
+  opacity: 0;
+}
+
+@keyframes delay-animation {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0.5;
+  }
+  4% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*flip card */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  margin: 70px auto;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  opacity: 0.5;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  opacity: 0.8;
+}
+
+.flip-card-back-one {
+  background-image: url(images/template1a.png);
+  background-size: 100% 100%;
+}
+
+.flip-card-front-one {
+  background-image: url(images/template1.png);
+  background-size: 100% 100%;
+}
+
+/*projects - dots*/
+
+#dots {
+  height: 20px;
+  position: absolute;
+  top: 63%;
+  right: 30px;
+  display: flex;
+}
+
+#dots span {
+  display: inline-block;
+  margin-left: 10px;
+  height: 15px;
+  width: 15px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40%;
+}
+
+.bracket1,
+.bracket2 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 300px;
+    margin-left: 0;
+  }
+
+  .bracket1,
+  .bracket2 {
+    display: block;
+    font-size: 300px;
+    z-index: 2000000;
+    color: white;
+    position: fixed;
+    top: 30%;
+  }
+
+  .bracket2 {
+    right: 2%;
+  }
+
+  .webdesign-ul {
+    top: 5%;
+    display: flex;
+    font-size: 20px;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  .tomaincopy {
+    bottom: 92%;
+    right: 77%;
+    font-size: 40px;
+  }
+
+  .names-mobile div {
+    font-size: 24px;
+    width: 500px;
+  }
+
+  .names-mobile {
+    text-align: center;
+    top: 47%;
+    left: calc(50% - 250px);
+  }
+
+  .flip-card {
+    width: 500px;
+    height: 400px;
+  }
+
+  #dots {
+    top: 87%;
+    right: 18%;
+  }
+
+  #dots span {
+    height: 25px;
+    width: 25px;
+  }
+
+  .contact {
+    font-size: 22px;
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bracket2 {
+    right: 25%;
+  }
+
+  h3 {
+    padding-top: 200px;
+  }
+
+  .bracket1 {
+    left: 25%;
+  }
+
+  .tomaincopy {
+    right: 90%;
+    bottom: 90%;
+  }
+
+  .flip-card {
+    width: 600px;
+    height: 500px;
+  }
+
+  #dots {
+    top: 90%;
+    right: 34%;
+  }
+
+  .contact {
+    margin-top: 8%;
+  }
+}

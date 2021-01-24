@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monda", sans-serif;
+}
+
+h1 {
+  position: fixed;
+  color: black;
+  width: 300px;
+  border: 1px solid rgb(114, 111, 111);
+  background-color: white;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  font-size: 50px;
+  top: 15%;
+  left: calc(50% - 150px);
+  text-align: center;
+  font-family: "Six Caps", sans-serif;
+  z-index: 10;
+  letter-spacing: 0.9mm;
+}
+main {
+  display: flex;
+}
+.web_design_div {
+  position: relative;
+  width: 50%;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main a {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.web_design_div a {
+  color: white;
+}
+
+.web_design_div hr {
+  background-color: white;
+  margin-top: 50px;
+  width: 80px;
+}
+
+.copy_div {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy_div a {
+  color: black;
+}
+
+.copy_div hr {
+  background-color: black;
+  margin-top: 50px;
+  width: 80px;
+  position: absolute;
+}
+
+#webdesign {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+}
+
+@media (min-width: 768px) {
+  main a {
+    font-size: 40px;
+  }
+  h1 {
+    width: 500px;
+    left: calc(50% - 250px);
+    letter-spacing: 1.9mm;
+  }
+
+  .copy_div hr {
+    width: 170px;
+    margin-top: 80px;
+  }
+
+  .web_design_div hr {
+    width: 170px;
+    margin-top: 80px;
+  }
+}
