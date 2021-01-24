@@ -50,6 +50,7 @@ main a {
   background-color: white;
   margin-top: 50px;
   width: 80px;
+  transition: 1s;
 }
 
 .copy_div {
@@ -68,7 +69,7 @@ main a {
   background-color: black;
   margin-top: 50px;
   width: 80px;
-  position: absolute;
+  transition: 1s;
 }
 
 #webdesign {
@@ -76,6 +77,11 @@ main a {
   width: 100%;
   background-color: black;
   position: fixed;
+}
+
+.hover_web,
+.hover_copy {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -96,5 +102,45 @@ main a {
   .web_design_div hr {
     width: 170px;
     margin-top: 80px;
+  }
+}
+
+.hover_web {
+  position: absolute;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.web_design_div:hover > .hover_web {
+  opacity: 1;
+}
+
+.web_design_div:hover > hr {
+  margin-top: 360px;
+}
+
+.hover_copy {
+  position: absolute;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0;
+  transition: 1s;
+}
+.copy_div:hover > .hover_copy {
+  opacity: 1;
+}
+
+.copy_div:hover > hr {
+  margin-top: 360px;
+}
+
+@media (min-width: 900px) {
+  .hover_web,
+  .hover_copy {
+    display: block;
   }
 }
